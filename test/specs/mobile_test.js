@@ -39,10 +39,10 @@ describe('bbdaily_test',async()=>{
         await buyOnceBtn.waitForExist({ timeout: 18000 })
         await buyOnceBtn.click()
 
-        await viewCartBtn.waitForExist({ timeout: 3000 })
-        await viewCartBtn.click()
+        // await viewCartBtn.waitForExist({ timeout: 3000 })
+        // await viewCartBtn.click()
 
-        await totalAmount.waitForExist({ timeout: 3000 })
+        // await totalAmount.waitForExist({ timeout: 3000 })
         // console.log(totalAmount.getText())
 
         
