@@ -10,7 +10,9 @@ describe('bbdaily_test',async()=>{
         const searchFieldInput = $('//android.widget.EditText[@resource-id="com.raincan.android.hybrid:id/searchView"]')
         const searchSuggestion = $('//android.widget.TextView[@resource-id="com.raincan.android.hybrid:id/txtTerm" and @text="carrots"]')
         const buyOnceBtn = $('(//android.widget.TextView[@resource-id="com.raincan.android.hybrid:id/btnAddToBasket"])[1]')
-
+        const viewCartBtn =''
+        const totalAmount =''
+        
         await bbdailyIcon.waitForExist()
         await bbdailyIcon.click()
         
@@ -36,6 +38,14 @@ describe('bbdaily_test',async()=>{
 
         await buyOnceBtn.waitForExist({ timeout: 18000 })
         await buyOnceBtn.click()
+
+        await viewCartBtn.waitForExist({ timeout: 3000 })
+        await viewCartBtn.click()
+
+        await totalAmount.waitForExist({ timeout: 3000 })
+        // console.log(totalAmount.getText())
+
+        
 
     })
 
