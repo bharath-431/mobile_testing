@@ -46,8 +46,8 @@ describe('bbdaily_test',async()=>{
         await viewCartBtn.click()
        
         
-        await totalAmount.getText()
-        console.log('Total amount of your order is: '+ totalAmount.getText())
+        const totalPrice= await totalAmount.getText()
+        console.log('Total amount of your order is: '+ totalPrice)
 
     })
 
